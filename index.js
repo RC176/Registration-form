@@ -43,7 +43,7 @@ function validate (){
         document.getElementById('email-valid').style.display = 'none'
         error = true
     }
-    if(mobileInput.length == 10 && containsNumbers(mobileInput))
+    if(mobileInput.length == 10 && containsNumbers(mobileInput) && parseInt(mobileInput.charAt(0)) > 5)
     {
         document.getElementById('mobile-valid').style.display = 'block'
         document.getElementById('mobile-invalid').style.display = 'none'
